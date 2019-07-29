@@ -10644,6 +10644,11 @@ a.text-dark:focus {
   }
 }
 
+img.item {
+  max-height: 300px;
+  width: auto;
+}
+
 nav {
   display: block;
   overflow: hidden;

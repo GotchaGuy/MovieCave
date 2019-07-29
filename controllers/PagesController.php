@@ -12,13 +12,13 @@ class PagesController {
         return view('index', compact('movies'));
     }
 
-    public function about()
+    public function myAccount()
     {
 
-        return view('about');
+        return view('my-account');
     }
 
-    public function aboutCulture()
+    public function logout()
     {
         return view('about-culture');
     }
