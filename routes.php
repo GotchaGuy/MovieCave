@@ -10,8 +10,8 @@ $router->get('api/tasks', 'TasksController@apiGet');
 
 $router->post('tasks/submit', 'TasksController@store');
 
-$router->get('admin/tasks', 'AdminTasksController@index');
-$router->get('admin/tasks/delete', 'AdminTasksController@delete');
+$router->get('admin/movies', 'AdminMoviesController@index');
+$router->get('admin/movies/delete', 'AdminMoviesController@delete');
 
 
 /*

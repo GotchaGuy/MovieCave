@@ -7,9 +7,9 @@ class PagesController {
 
     public function home()
     {
-        $tasks = App::get('db')->fetchAll("tasks");
+        $movies = App::get('db')->fetchAll("movies");
 
-        return view('index', compact('tasks'));
+        return view('index', compact('movies'));
     }
 
     public function about()

@@ -4,7 +4,7 @@ return [
     "database" => [
         "driver" => "mysql",
         "host" => "localhost",
-        "dbname" => "0918tasks",
+        "dbname" => "movie_cave",
         "user" => "root",
         "password" => "",
         "options" => [
