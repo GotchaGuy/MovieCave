@@ -13,4 +13,11 @@
 </head>
 <body>
 <div id="app">
+
+
+
+<header>
+
     <?php require "nav.php" ?>
+</header>
+

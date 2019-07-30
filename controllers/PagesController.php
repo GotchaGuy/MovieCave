@@ -5,11 +5,18 @@ use Cms\Core\App;
 
 class PagesController {
 
-    public function home()
+    public function logIn()
+    {
+        $users = App::get('db')->fetchAll("users");
+
+        return view('index', compact('users'));
+    }
+
+    public function movies()
     {
         $movies = App::get('db')->fetchAll("movies");
 
-        return view('index', compact('movies'));
+        return view('movies', compact('movies'));
     }
 
     public function myAccount()

@@ -1,25 +1,39 @@
+body {
+  font-family: $font;
+}
+
+header {
+  width: 100%;
+  min-height: 200px;
+  background: $main;
+  background: linear-gradient(to bottom, $main, $textDark);
+
+
 nav {
   display: block;
   overflow: hidden;
-}
-nav ul {
+  ul {
   margin: 0;
   padding: 0;
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 10px;
+    a {
+    display: block;
+    padding: 4px;
+    background-color: gainsboro;
+    text-decoration: none;
+  }
+    a:hover {
+    background-color: aqua;
+  }
+  }
 
 }
-nav ul li {
-  list-style-type: none;
-  float: left;
-  margin: 10px;
+
 }
 
-nav ul li a {
-  display: block;
-  padding: 4px;
-  background-color: gainsboro;
-  text-decoration: none;
-}
 
-nav ul li a:hover {
-  background-color: aqua;
+
 }

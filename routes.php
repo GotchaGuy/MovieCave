@@ -1,5 +1,6 @@
 <?php
-$router->get('', 'PagesController@home');
+$router->get('', 'PagesController@logIn');
+$router->get('movies', 'PagesController@movies');
 $router->get('about', 'PagesController@about');
 $router->get('about/culture', 'PagesController@aboutCulture');
 $router->get('contact', 'PagesController@contact');

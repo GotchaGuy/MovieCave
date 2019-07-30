@@ -10644,35 +10644,100 @@ a.text-dark:focus {
   }
 }
 
-img.item {
-  max-height: 300px;
-  width: auto;
+section#logIn {
+  background-color: #333138;
+  color: #f5f5f5;
+  text-align: center;
+  min-height: 800px;
 }
 
-nav {
+section#movies {
+  background-color: #333138;
+  min-height: 800px;
+}
+
+section#movies div.item {
+  background: linear-gradient(to top, #333138, #ca183e);
+  width: 320px;
+  height: 550px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+  transition: 0.3s;
+}
+
+section#movies div.item div {
+  width: 300px;
+  height: 450px;
+  display: inline-block;
+  border: 1px solid #f5f5f5;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+section#movies div.item div img {
+  min-width: 300px;
+  min-height: 450px;
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}
+
+section#movies div.item h2 {
+  color: #f5f5f5;
+  font-size: 25px;
+}
+
+section#movies div.item h3 {
+  color: #f5f5f5;
+  font-size: 18px;
+}
+
+section#movies div.item:hover {
+  background: linear-gradient(to top, #ca183e, #ca183e);
+  transform: scale(1.1);
+}
+
+body {
+  font-family: "Helvetica";
+}
+
+header {
+  width: 100%;
+  min-height: 200px;
+  background: #ca183e;
+  background: linear-gradient(to bottom, #ca183e, #333138);
+}
+
+header nav {
   display: block;
   overflow: hidden;
 }
 
-nav ul {
+header nav ul {
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+header nav ul li {
   list-style-type: none;
   float: left;
   margin: 10px;
 }
 
-nav ul li a {
+header nav ul li a {
   display: block;
   padding: 4px;
   background-color: gainsboro;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   background-color: aqua;
 }
 
