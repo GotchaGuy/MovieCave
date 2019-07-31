@@ -1,4 +1,4 @@
 <?php require "partials/header.php" ?>
-    <h1>About us</h1>
-<hello-world></hello-world>
+    <h2>My account</h2>
+<!--<hello-world></hello-world>-->
 <?php require "partials/footer.php" ?>

@@ -1,0 +1,74 @@
+
+
+
+
+header.admin-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 200px;
+  background: $main;
+  //background: linear-gradient(to bottom, $main, $textDark);
+display: inline-block;
+
+  h2 {
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    background-color: $mainDark;
+    margin: 0;
+  }
+
+  nav {
+    width: 200px;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    //background-color: green;
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      border-top: 2px solid $text;
+
+      li {
+        //display: inline-block;
+        list-style-type: none;
+        width: 200px;
+        height: 50px;
+        a {
+          height: 100%;
+          width: 100%;
+          text-decoration: none;
+          display: inline-block;
+          color: $text;
+          background: transparent;
+          transition: 0.3s;
+          box-sizing: border-box;
+          //padding-top: 1px;
+          //border-top: 1px solid $text;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 50px;
+        }
+        a:hover {
+          text-decoration: none;
+          color: $text;
+          background-color: $mainDark;
+          font-size: 14px;
+        }
+      }
+
+    }
+
+  }
+}
+
+
+
+

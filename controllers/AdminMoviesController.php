@@ -7,7 +7,8 @@ class AdminMoviesController {
     public function index()
     {
         $movies =  App::get('db')->fetchAll("movies");
-        return view('admin-movies', compact('movies'));
+        $directors =  App::get('db')->fetchAll("directors");
+        return view('admin-movies', compact('movies', 'directors'));
     }
 
     public function find()

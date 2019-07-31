@@ -1,18 +1,26 @@
 <?php
 $router->get('', 'PagesController@logIn');
 $router->get('movies', 'PagesController@movies');
-$router->get('about', 'PagesController@about');
-$router->get('about/culture', 'PagesController@aboutCulture');
-$router->get('contact', 'PagesController@contact');
+$router->get('my_account', 'PagesController@my_account');
 
-$router->get('api/tasks', 'TasksController@apiGet');
+//$router->get('about/culture', 'PagesController@aboutCulture');
+//$router->get('contact', 'PagesController@contact');
+//
+//$router->get('api/tasks', 'TasksController@apiGet');
 
 //$router->post('contact/submit', 'controllers/contact-submit.php');
+//
+//$router->post('tasks/submit', 'TasksController@store');
 
-$router->post('tasks/submit', 'TasksController@store');
 
 $router->get('admin/movies', 'AdminMoviesController@index');
-$router->get('admin/movies/delete', 'AdminMoviesController@delete');
+$router->post('admin/movies/find', 'ApiMoviesController@find');
+$router->post('admin/movies', 'ApiMoviesController@store');
+$router->post('admin/movies/update', 'ApiMoviesController@update');
+$router->post('admin/movies/delete', 'AdminMoviesController@delete');
+
+
+
 
 
 /*

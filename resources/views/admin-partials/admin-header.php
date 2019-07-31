@@ -16,8 +16,8 @@
 
 
 
-<header class="user">
+    <header class="admin-head">
 
-    <?php require "nav.php" ?>
-</header>
+        <?php require "admin-nav.php" ?>
+    </header>
 

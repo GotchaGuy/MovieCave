@@ -1,9 +1,7 @@
 <nav>
     <ul>
-        <li><a href="/movies">More Movies</a></li>
-        <li><a href="/about">Movies</a></li>
-        <li><a href="/about/culture">My account</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href=" ">Logout</a></li>
+        <li><a href="/movies">MOVIES</a></li>
+        <li><a href="/my_account">MY ACCOUNT</a></li>
+        <li><a href="/">LOGOUT</a></li>
     </ul>
 </nav>

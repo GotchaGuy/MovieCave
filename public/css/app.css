@@ -10644,6 +10644,70 @@ a.text-dark:focus {
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333138;
+  color: #f5f5f5;
+  font-family: "Helvetica";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header.user {
+  width: 100%;
+  min-height: 200px;
+  background: #ca183e;
+  background: linear-gradient(to bottom, #ca183e, #333138);
+}
+
+header.user nav {
+  width: 100%;
+  height: 50px;
+  display: block;
+  overflow: hidden;
+}
+
+header.user nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 2px solid #f5f5f5;
+}
+
+header.user nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 110px;
+  height: 50px;
+}
+
+header.user nav ul li a {
+  height: 100%;
+  width: 110px;
+  text-decoration: none;
+  display: inline-block;
+  color: #f5f5f5;
+  background: transparent;
+  transition: 0.3s;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+header.user nav ul li a:hover {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 14px;
+}
+
 section#logIn {
   background-color: #333138;
   color: #f5f5f5;
@@ -10652,14 +10716,13 @@ section#logIn {
 }
 
 section#movies {
-  background-color: #333138;
   min-height: 800px;
 }
 
 section#movies div.item {
   background: linear-gradient(to top, #333138, #ca183e);
-  width: 320px;
-  height: 550px;
+  width: 280px;
+  height: 490px;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -10670,8 +10733,8 @@ section#movies div.item {
 }
 
 section#movies div.item div {
-  width: 300px;
-  height: 450px;
+  width: 260px;
+  height: 390px;
   display: inline-block;
   border: 1px solid #f5f5f5;
   overflow: hidden;
@@ -10679,8 +10742,8 @@ section#movies div.item div {
 }
 
 section#movies div.item div img {
-  min-width: 300px;
-  min-height: 450px;
+  min-width: 260px;
+  min-height: 390px;
   height: auto;
   width: 100%;
   -o-object-fit: cover;
@@ -10703,42 +10766,125 @@ section#movies div.item:hover {
   transform: scale(1.1);
 }
 
-body {
-  font-family: "Helvetica";
-}
-
-header {
-  width: 100%;
-  min-height: 200px;
+header.admin-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 200px;
   background: #ca183e;
-  background: linear-gradient(to bottom, #ca183e, #333138);
+  display: inline-block;
 }
 
-header nav {
+header.admin-head h2 {
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  background-color: #9b1230;
+  margin: 0;
+}
+
+header.admin-head nav {
+  width: 200px;
+  height: 100%;
   display: block;
   overflow: hidden;
 }
 
-header nav ul {
+header.admin-head nav ul {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 2px solid #f5f5f5;
 }
 
-header nav ul li {
+header.admin-head nav ul li {
   list-style-type: none;
-  float: left;
-  margin: 10px;
+  width: 200px;
+  height: 50px;
 }
 
-header nav ul li a {
-  display: block;
-  padding: 4px;
-  background-color: gainsboro;
+header.admin-head nav ul li a {
+  height: 100%;
+  width: 100%;
   text-decoration: none;
+  display: inline-block;
+  color: #f5f5f5;
+  background: transparent;
+  transition: 0.3s;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 50px;
 }
 
-header nav ul li a:hover {
-  background-color: aqua;
+header.admin-head nav ul li a:hover {
+  text-decoration: none;
+  color: #f5f5f5;
+  background-color: #9b1230;
+  font-size: 14px;
+}
+
+section#adminMovies table {
+  border: 2px solid #ca183e;
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+section#adminMovies table thead {
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  height: 30px;
+  width: 100%;
+}
+
+section#adminMovies table tbody tr:nth-child(odd) {
+  background-color: #f5f5f5;
+  color: #333138;
+}
+
+section#adminMovies table tbody tr:nth-child(even) {
+  background-color: #d6d6d6;
+  color: #333138;
+}
+
+section#adminMovies table tr {
+  width: 1200px;
+}
+
+section#adminMovies table tr th {
+  height: 30px;
+  padding: 10px;
+}
+
+section#adminMovies table tr td {
+  height: 180px;
+  max-width: 350px;
+  padding: 10px;
+}
+
+section#adminMovies table tr td.poster {
+  padding: 0;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+section#adminMovies table tr td.poster img {
+  min-width: 200px;
+  min-height: 300px;
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
 }
 
 /* use this file to   import all others */

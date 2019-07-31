@@ -1,0 +1,66 @@
+
+
+
+section#adminMovies {
+
+
+
+  table {
+    border: 2px solid $main;
+    text-align: center;
+    margin: auto;
+    //border-radius: 20px;
+    border-collapse: collapse;
+
+    thead{
+      background-color: black;
+      color: white;
+      text-shadow: 1px 1px 1px black;
+      height: 30px;
+      width: 100%;
+    }
+
+
+
+    tbody tr:nth-child(odd) {
+      background-color: $text;
+      color: $textDark;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #d6d6d6;
+      color: $textDark;
+    }
+
+    tr {
+      width: 1200px;
+      th {
+        height: 30px;
+        padding: 10px;
+      }
+
+      td {
+        height: 180px;
+        max-width: 350px;
+        padding: 10px;
+      }
+       td.poster {
+         padding: 0;
+        width: 200px;
+        height: 300px;
+        display:inline-block;
+        overflow: hidden;
+        img {
+          min-width: 200px;
+          min-height: 300px;
+          height: auto;
+          width: 100%;
+          object-fit: cover;
+          margin: auto;
+        }
+      }
+
+    }
+  }
+
+}

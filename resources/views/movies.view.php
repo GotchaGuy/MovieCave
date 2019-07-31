@@ -1,5 +1,5 @@
 <?php require "partials/header.php" ?>
-    <section id="movies">
+    <section id="movies" class="container">
         <!--<ul>-->
         <?php foreach ($movies as $movie): ?>
             <a href="?id=<?= $movie->id ?>">

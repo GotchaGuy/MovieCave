@@ -19,19 +19,22 @@ class PagesController {
         return view('movies', compact('movies'));
     }
 
-    public function myAccount()
+    public function my_account()
     {
-
-        return view('my-account');
+        $users = App::get('db')->fetchAll("users");
+        $comments = App::get('db')->fetchAll("comments");
+        return view('my-account',
+            compact("users"),
+            compact("comments"));
     }
 
     public function logout()
     {
         return view('about-culture');
     }
-
-    public function contact()
-    {
-        return view('contact');
-    }
+//
+//    public function contact()
+//    {
+//        return view('contact');
+//    }
 }
