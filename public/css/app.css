@@ -10657,6 +10657,10 @@ body {
   margin: 0 auto;
 }
 
+.none {
+  display: none;
+}
+
 header.user {
   width: 100%;
   min-height: 200px;

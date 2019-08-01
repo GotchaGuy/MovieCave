@@ -1,6 +1,7 @@
 <?php require "partials/header.php" ?>
     <section id="movies" class="container">
-        <!--<ul>-->
+
+        <div class="multiple " >
         <?php foreach ($movies as $movie): ?>
             <a href="?id=<?= $movie->id ?>">
             <div class="item">
@@ -9,10 +10,20 @@
                 <h3><?= $movie->year_of_release ?></h3>
             </div>
             </a>
-
         <?php endforeach; ?>
-        <!--</ul>-->
+        </div>
 
+        <?php
+        if(isset($_GET['id'])) {
+            $uniID = $_GET['id'];
+        }
+
+            ?>
+        <div class="singular none">
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
 <!--        <h2>Crete a new task!</h2>-->
 
 <!--        <form action="/movies/submit" method="POST">-->
