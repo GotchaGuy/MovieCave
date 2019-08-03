@@ -15,7 +15,6 @@ class PagesController {
     public function movies()
     {
         $movies = App::get('db')->fetchAll("movies");
-
         return view('movies', compact('movies'));
     }
 
@@ -23,16 +22,14 @@ class PagesController {
     {
         $users = App::get('db')->fetchAll("users");
         $comments = App::get('db')->fetchAll("comments");
-        return view('my-account',
-            compact("users"),
-            compact("comments"));
+        return view('my-account', compact("users", "comments"));
     }
 
-    public function logout()
-    {
-        return view('about-culture');
-    }
-//
+//    public function logout()
+//    {
+//        return view('about-culture');
+//    }
+////
 //    public function contact()
 //    {
 //        return view('contact');

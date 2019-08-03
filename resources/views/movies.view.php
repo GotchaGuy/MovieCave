@@ -24,13 +24,7 @@
                 <img src="" alt="">
             </div>
         </div>
-<!--        <h2>Crete a new task!</h2>-->
 
-<!--        <form action="/movies/submit" method="POST">-->
-<!--            <input type="text" name="description">-->
-<!--            <label for="completed">Completed:</label>-->
-<!--            <input type="checkbox" id="completed" name="completed" value="1">-->
-<!--            <button>Submit</button>-->
-<!--        </form>-->
+
     </section>
 <?php require "partials/footer.php" ?>

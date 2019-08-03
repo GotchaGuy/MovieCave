@@ -9,6 +9,16 @@
 <!--        <button type="submit">Submit</button>-->
 <!--    </form>-->
 
+            <h2>Crete a new task!</h2>
+
+            <form action="admin/movies/submit" method="POST">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+                <label for="year">Year of release</label>
+                <input type="number" id="completed" name="completed" min="1870" max="<?= date("Y", strtotime('now'))?>" value="<?= date("Y", strtotime('now'))?>">
+                <button>Submit</button>
+            </form>
+
 <a href="/admin/movies/store">Insert New Task</a>
 <table>
     <thead>
