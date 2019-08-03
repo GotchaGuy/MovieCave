@@ -17,15 +17,15 @@ $router->get('admin/movies', 'AdminMoviesController@index');
 $router->post('admin/movies/find', 'AdminMoviesController@find');
 $router->post('admin/movies', 'AdminMoviesController@store');
 $router->post('admin/movies/update', 'AdminMoviesController@update');
-$router->post('admin/movies/delete', 'AdminMoviesController@delete');
+$router->get('admin/movies/delete', 'AdminMoviesController@delete');
 
 // admin genres
 $router->get('admin/genres', 'AdminGenresController@index');
 $router->post('admin/genres/find', 'AdminGenresController@find');
 $router->post('admin/genres', 'AdminGenresController@store');
 $router->post('admin/genres/update', 'AdminGenresController@update');
-$router->post('admin/genres/delete', 'AdminGenresController@delete');
-
+$router->get('admin/genres/delete', 'AdminGenresController@delete');
+$router->get('admin/genres/edit', 'AdminGenresController@edit');
 
 
 /*

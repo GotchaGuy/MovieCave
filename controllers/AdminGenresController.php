@@ -12,12 +12,13 @@ class AdminGenresController {
 
     public function find()
     {
-        $genre =  App::get('db')->fetchOne("genres", $_POST);
-        echo json_encode($genre[0]);
+        $genre =  App::get('db')->fetchOne("genres", $_POST)[0];
+        echo json_encode($genre);
     }
 
     public function store()
     {
+//        dd($_POST);
         App::get('db')->insert("genres", $_POST);
 
         echo json_encode([
@@ -32,6 +33,14 @@ class AdminGenresController {
             'result' => 'success'
         ]);
     }
+
+    public function edit()
+    {
+        $genre =  App::get('db')->fetchOne("genres", $_GET)[0];
+
+        return view('admin-genres-edit', compact('genre'));
+    }
+
 
     public function delete()
     {
